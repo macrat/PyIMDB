@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+grpcio-tools = "*"
+msgpack = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+codegen = "python codegen.py"
+server = "python server.py"
+client = "python client.py"
